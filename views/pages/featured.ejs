@@ -1,0 +1,25 @@
+<%- include('../partials/head') %>
+
+    <body class="<%= className %>">
+        <%- include('../partials/header') %>
+            <div class="main">
+                <p class="description">
+                    <%= description %>
+                </p>
+
+                <% if (locals.pageType) { %>
+                    <% if (pageType === "cats" ) { %>
+                        <% if (locals.catArray) { %> 
+                            <%- include('../partials/cats') %>
+                        <% } %>
+                    <% } else if (pageType === "musicals") { %>
+                        <% if (locals.musicalList) { %> 
+                            <%- include ('../partials/musicals') %>
+                        <% } %>
+                    <% } %>
+                <% } %>
+            </div>
+            <%- include('../partials/footer') %>
+    </body>
+
+    </html>

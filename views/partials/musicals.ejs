@@ -1,0 +1,9 @@
+<% if (musicalList) { %>
+    <% musicalList.forEach(show => { %>
+        <div class="content">
+            <h4 class="content__title"><%= show.name %></h4>
+            <p class="content__composer">Written by <%= show.creator %></p>
+            <p class="content__description"><%= show.about %></p>
+        </div>
+    <% }) %>
+ <% } %>

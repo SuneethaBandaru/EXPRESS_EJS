@@ -1,0 +1,12 @@
+<% if (locals.catArray) { %>
+    <% catArray.forEach(cat => { %>
+        <div class="content">
+           <p class="content__composer"></p><%= cat.name %></p>
+           <p class="content__description"></p><%= cat.type %></p>
+           <p>Traits: <% cat.traits.forEach(trait => { %>
+                   <span><%= trait %></span>
+               <% }) %>
+            </p>
+        </div>
+   <% }) %>
+<% } %>

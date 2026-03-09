@@ -1,0 +1,30 @@
+<%- include('../partials/head') %>
+
+    <body>
+        <%- include('../partials/header') %>
+            <div class="main">
+                <section class="section breeds">
+                    <h4>Cat Breeds</h4>
+                    <p>There are hundreds of different breeds of cats, from elegant long hair varieties to really ugly
+                        hairless mutants</p>
+                </section>
+
+                <section class="section musicals">
+                    <h4>Cat Musicals</h4>
+                    <p>There is one really famous cat based musical, and I'll make some others up to fill out this
+                        website!</p>
+                </section>
+            </div>
+
+            <% if (locals.underlineThis) { %>
+                <% if (underlineThis) { %>
+                    <p>You cant see this if the variable is false</p>
+                <% } %>
+
+                <div class=<%=underlineThis ? "underline" : "no-underline" %>>Thanks for visiting</div>
+             <% } %>
+        <%- include('../partials/footer') %>
+                           
+    </body>
+
+    </html>

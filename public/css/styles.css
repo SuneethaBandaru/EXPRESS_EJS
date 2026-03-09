@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+.breeds {
+    background-color: #EFF1C5;
+}
+
+.kittens {
+    background-color: skyblue;
+}
+
+.kittens .header {
+    background-color:slateblue;
+}
+
+.kittens .header__title {
+    color: snow;
+}
+
+.header {
+    background: #EFF1C5;
+    border-bottom: 4px solid #002E2C;
+    padding: 24px;
+    text-align: center
+}
+
+.header__title {
+    color: #002E2C;
+    font-size: 4rem;
+}
+
+.header__subtitle {
+    color: #002E2C;
+    font-size: 2rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 24px;
+}
+
+.menu__item {
+    background-color: #002E2C;
+    border: 2px solid #002E2C;
+    border-radius: 10px;
+    color: snow;
+    font-size: 1.4rem;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.menu__item:hover {
+    background-color: snow;
+    color: #002E2C;
+}
+
+.main {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.section {
+    background-color: #E3E7AF;
+    border: 2px solid #002E2C;
+    border-radius: 10px;
+    flex: 0 0  calc(50% - 24px / 2);
+    padding: 16px;
+}
+
+.section h4 {
+    color: #035E7B;
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.description {
+    flex: 0 0 100%;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.underline {
+    font-size: 2rem;
+    padding: 16px;
+    text-decoration: underline;
+}
+
+.content {
+    background: rgba(3,94,123, 20%);
+    border: 4px solid #035E7B;
+    border-radius: 10px;
+    flex: 0 0 calc(100% / 3 - (24px * 3 / 2) );
+    padding: 16px;
+
+}
+
+.content__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.footer {
+    background-color: #A2A77F;
+    color: #EFF1C5;
+    font-size: 1.4rem;
+    padding: 32px;
+    text-align: center;
+}
